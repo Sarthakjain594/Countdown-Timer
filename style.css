@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue1: hsl(235, 16%, 14%);
+  --Very-dark-blue2: hsl(234, 17%, 12%);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--Very-dark-blue1);
+  font-family: "Red Hat Text", sans-serif;
+}
+
+div.container {
+  height: 100vh;
+  background-color: var(--Dark-desaturated-blue);
+  background: url(./images/pattern-hills.svg) no-repeat bottom ;
+}
+
+div.stars {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+div.displaying-modal {
+  display: none;
+}
+
+div.time-setting-modal {
+  background-color: var(--Dark-desaturated-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 80%;
+  margin: auto;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0%;
+  margin: auto;
+  border-radius: 1rem;
+  
+}
+
+button.time-setter-btn {
+  text-transform: uppercase;
+  font-weight: 100;
+  height: 2rem;
+  width: 6rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+button.start {
+  text-transform: uppercase;
+  font-weight: 100;
+  height: 3rem;
+  width: 8rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 2rem;
+  right: 0rem;
+  left: 0%;
+  margin: auto;
+}
+
+div.time-setting-modal h2 {
+  color: wheat;
+  position: relative;
+  bottom: 2rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  height: 3rem;
+  width: 16rem;
+  border-radius: 1rem;
+  z-index: 999999;
+}
+
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 6px;
+  color: var(--White);
+  font-weight: 100;
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  right: 0;
+}
+
+div.time-divs {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 17rem;
+  justify-content: center;
+}
+
+div.time-divs div {
+  color: var(--Soft-red);
+  margin: auto 0.2rem;
+}
+
+div.time-divs div h4 {
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 10;
+  letter-spacing: 5px;
+  color: var(--Grayish-blue);
+  text-align: center;
+  margin: 0.5rem auto auto 0.4rem;
+}
+
+div.time-left {
+  display: flex;
+  flex-direction: column;
+  /* height: 5rem;
+  width: 5rem; */
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+}
+
+div.flip1 {
+  height: 2.2rem;
+  width: 4.5rem;
+  border-radius: 5px 5px 8px 8px;
+  background-color: var(--Grayish-blue);
+  /* margin: 0 ; */
+  opacity: 0.3;
+}
+
+div.flip2 {
+  height: 2.2rem;
+  width: 4.5rem;
+  border-radius: 8px 8px 5px 5px;
+  background-color: var(--Grayish-blue);
+  opacity: 0.4;
+  /* margin: 0; */
+}
+
+.time-p {
+  display: inline;
+  position: absolute;
+  bottom: 1.5rem;
+  font-size: 2.8rem;
+  transition: all linear 1s;
+}
+
+div.socials {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  right: 0;
+  width: 40%;
+  margin: auto;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width:850px){
+
+  div.time-divs div {
+    color: var(--Soft-red);
+    margin: auto 0.2rem;
+  }
+  
+  div.time-divs div h4 {
+    font-size: 10px;
+  }
+  
+  div.flip1 {
+    height: 3rem;
+    width: 6rem;
+  }
+  
+  div.flip2 {
+    height: 3rem;
+    width: 6rem;    
+  }
+
+  .time-p {
+    bottom: 1.8rem;
+    font-size: 3.6rem;
+    transition: all linear 1s;
+  }
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Soft-red);
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title> Launch countdown timer</title>
+  </head>
+  <body>
+    <div class="stars">
+      <img src="./images/bg-stars.svg" alt="stars-background">
+    </div>
+
+    <button class="time-setter-btn">SET TIMER</button>
+    <div class="displaying-modal">
+      <div class="time-setting-modal">
+        <h2> Set your countdown time : </h2>
+        <input type="datetime-local" name="time-setter-field" id="time-setter-field" >
+        <button class="start">START countdown</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading">
+        <h1>Launching IN :</h1>
+      </div>
+
+      <div class="time-divs">
+        <div class="days">
+          <div class="time-left days-left-div">
+            <div class="flip1"></div>
+            <div class="flip2"></div>
+            <p class="days-left time-p">00</p>
+          </div>
+          <h4>Days</h4>
+        </div>
+        <div class="hours">
+          <div class="time-left hours-left-div">
+            <div class="flip1"></div>
+            <div class="flip2"></div>
+            <p class="hours-left time-p">00</p>
+          </div>
+          <h4>Hours</h4>
+        </div>
+        <div class="minutes">
+          <div class="time-left minutes-left-div">
+            <div class="flip1"></div>
+            <div class="flip2"></div>
+            <p class="minutes-left time-p">00</p>
+          </div>
+          <h4>Minutes</h4>
+        </div>
+        <div class="seconds">
+          <div class="time-left seconds-left-div">
+            <div class="flip1"></div>
+            <div class="flip2"></div>
+            <p class="seconds-left time-p">00</p>
+          </div>
+          <h4>Seconds</h4>
+        </div>
+      </div>
+      <div class="socials">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+        <img src="./images/icon-pinterest.svg" alt="icon-pinterest" />
+        <img src="./images/icon-instagram.svg" alt="icon-pinterest" />
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.linkedin.com/in/sarthak-jain-715926202/" target="_blank">Sarthak Jain</a>.
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
